@@ -1,3 +1,7 @@
+import sys
+import numpy
+sys.modules['numpy._core']=numpy
+sys.modules['numpy._core.multiarray']=numpy.core.multiarray
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
